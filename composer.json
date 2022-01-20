@@ -1,0 +1,27 @@
+{
+    "name": "jazor/illuminate",
+    "type": "library",
+    "description": "blade view engine, based on laravel",
+    "keywords": ["jazor"],
+    "homepage": "https://github.com/cook-code-jazor/illuminate",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "anlige",
+            "email": "zhanghuiguoanlige@126.com",
+            "homepage": "https://github.com/cook-code-jazor/illuminate"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Illuminate\\": "./"
+        },
+	    "files": [
+	      "./helper.php"
+	    ]
+    },
+    "minimum-stability": "dev"
+}
