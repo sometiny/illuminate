@@ -122,7 +122,7 @@ class BladeCompiler extends Compiler implements CompilerInterface
 
             if (! empty($this->getPath())) {
                 $tokens = $this->getOpenAndClosingPhpTokens($tokens);
-
+                if(is_array($tokens)) $tokens = array_values($tokens);
                 // If the tokens we retrieved from the compiled contents have at least
                 // one opening tag and if that last token isn't the closing tag, we
                 // need to close the statement before adding the path at the end.
